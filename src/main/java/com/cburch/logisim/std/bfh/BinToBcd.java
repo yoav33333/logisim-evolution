@@ -43,7 +43,7 @@ public class BinToBcd extends InstanceFactory {
   private static final int InnerDistance = 60;
 
   public static final Attribute<BitWidth> ATTR_BinBits =
-      Attributes.forBitWidth("binvalue", S.getter("BinaryDataBits"), 4, 13);
+      Attributes.forBitWidth("binvalue", S.getter("BinaryDataBits"), 4, 16);
 
   public BinToBcd() {
     super(_ID, S.getter("Bin2BCD"), new BinToBcdHdlGeneratorFactory());
